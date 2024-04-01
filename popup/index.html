@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKS - Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hd-ctr">
+            <h1 class="hd-h1">
+                Password Generator
+            </h1>
+        </div>
+        <div class="pw-box">
+            <div class="ldiv">
+                <label class="LBL" for="length">Password Length:</label>
+                <input class="IP" type="number" id="length" min="6" max="32">
+            </div>
+            <div class="choose">
+                <div>
+                    <input type="checkbox" id="uppercase" checked>
+                    <label for="uppercase">A-Z</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="lowercase" checked>
+                    <label for="lowercase">a-z</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="numbers" checked>
+                    <label for="numbers">0-9</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="special" checked>
+                    <label for="special">[?]</label>
+                </div>
+            </div>
+            <div class="gendiv">
+                <button class="btn" id="generateButton">Generate</button>
+                <textarea class="txtar" id="password" rows="4" readonly></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
